@@ -1,0 +1,40 @@
+.video {
+  margin: 150px 250px 80px 250px;
+}
+.features-h2 {
+  text-align: center;
+  color: #72e46e;
+  font-weight: 600;
+  font-size: 20px;
+}
+.features-p {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #65bd7f;
+  padding-bottom: 10px;
+}
+.p2 {
+  width: 90%;
+  margin-left: 5%;
+  color: #7a7a7a;
+  font-size: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+}
+
+.QR {
+  margin-top: 14x;
+  margin-left: 40%;
+  width: 300px;
+  max-width: 100%;
+}
+
+.ad {
+  margin-top: 5em;
+  max-width: 82vw;
+  margin-left: 7em;
+}
+.features-page {
+  height: 240vh;
+}

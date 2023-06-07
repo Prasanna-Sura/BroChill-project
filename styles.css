@@ -60,6 +60,7 @@ body {
 .header {
   margin-top: 20px;
   margin-left: 60px;
+  display: flex;
 }
 .nav-links {
   color: rgb(36, 35, 35);
@@ -73,17 +74,52 @@ body {
 }
 .nav-links:active {
   border: 1px dotted black;
-  padding: 10px;
+  padding: 20px;
 }
-/* select {
-  background-color: #5aa945;
-  border: 0px;
-} */
 
-/* .body-flex {
-  display: flex;
-  justify-content: center;
-} */
+ul {
+  list-style-type: none;
+}
+
+/* DROPDOWN */
+
+.header li {
+  padding-right: 8px;
+  position: relative;
+  height: 40px;
+}
+
+.header .explore ul.dropdown a {
+  display: block;
+  padding: 15px 50px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.header .explore ul.dropdown li {
+  display: block;
+}
+.header .explore ul.dropdown {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  width: 250px;
+  background-color: white;
+  border-top: 2px solid rgb(12, 62, 199);
+  display: none;
+}
+
+.header .explore:hover ul.dropdown {
+  display: block;
+  margin-right: 100px;
+  position: absolute;
+}
+.header .explore ul.dropdown a:hover {
+  color: rgb(55, 198, 110);
+}
+
+/* BODY */
+
 h1 {
   font-size: 55px;
   font-weight: 600;
@@ -91,7 +127,6 @@ h1 {
 }
 
 .first-block {
-  /* background-color: #b6ffa2; */
   background-image: linear-gradient(#ffffff, #aafe93);
   text-align: center;
   margin-top: 100px;
@@ -189,8 +224,8 @@ h1 {
   margin: 2px 20px;
   height: 400px;
 }
-ul {
-  list-style: none;
+.footer-ul {
+  list-style-type: none;
 }
 .foot-heading1 {
   text-align: center;
@@ -208,7 +243,7 @@ ul {
   margin-bottom: 10px;
 }
 
-li {
+.footer-ul li {
   margin-left: 42px;
   line-height: 28px;
   align-self: center;
@@ -277,4 +312,50 @@ button {
 }
 #social {
   margin-right: 90px;
+}
+
+/* FOOTER EXPLORE
+ */
+
+.foot-explore ul.dropdown a {
+  display: block;
+  padding: 8px 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.foot-explore ul.dropdown li {
+  display: block;
+  border-bottom: 1px solid rgb(27, 240, 102);
+}
+.foot-explore ul.dropdown {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.foot-explore:hover ul.dropdown {
+  display: block;
+  position: absolute;
+}
+
+/* RESPONSES */
+
+@media screen and (max-width: 600px) {
+  .lists {
+    background-color: #131313;
+    color: white;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: space-around; */
+    line-height: 40px;
+    padding: 20px;
+    margin: 2px 20px;
+    height: 800px;
+  }
 }
